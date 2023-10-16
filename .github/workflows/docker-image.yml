@@ -15,8 +15,6 @@ jobs:
     - name: Build the Docker image
       run: docker compose up -d --build
 
-    - name: push image to docker hub
-      run: docker push umair096/testdeployment:tagname
     - name: Login to Docker Hub
       run: docker login -u ${umair096} -p ${D0ck3r81301--}
 
