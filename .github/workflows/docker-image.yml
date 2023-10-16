@@ -16,7 +16,7 @@ jobs:
       run: docker compose up -d --build
 
     - name: Login to Docker Hub
-      run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_ACCESS_TOKEN }}
+      run: docker login -u umair096 -p dckr_pat_2mLBegIZoG0L_G9MaC4Th_TlYaw
 
     - name: Push image to Docker Hub
       run: docker push umair096/testdeployment:lts
