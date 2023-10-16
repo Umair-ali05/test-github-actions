@@ -19,7 +19,7 @@ jobs:
       run: docker login -u ${umair096} -p ${D0ck3r81301--}
 
     - name: Push image to Docker Hub
-      run: docker push umair096/testdeployment:tagname
+      run: docker push umair096/testdeployment:lts
 
     - name: Logout from Docker Hub
       run: docker logout
